@@ -85,7 +85,7 @@ let userData = {
   songCurrentTime:0
 };
 const renderSongs = (array) => {
-  const songsHTML = array .map((song)=> {
+  const songsHTML = array.map((song)=> {
     return `
       <li id="song-${song.id}" class="playlist-song">
       <button class="playlist-song-info">
@@ -99,4 +99,7 @@ const renderSongs = (array) => {
       </button>
       </li>
       `; 
-  })} 
+  }).join("");
+playlistSongs.innerHTML = songsHTML;
+
+} 
