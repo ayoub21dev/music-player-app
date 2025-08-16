@@ -123,4 +123,4 @@ const sortSongs = () => {
 };
 
 
-renderSongs(userData?.songs)
+renderSongs(sortSongs())
